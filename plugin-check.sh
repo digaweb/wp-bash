@@ -4,9 +4,9 @@
 # Helpful to diagnose 500 error or White Page of Death
 
 # Directory where wordpress is installed
-dir=""
+dir="" # Must not have back-slash at end
 
-cd ${dir}
+cd ${dir}/wp-content/plugins
 
 for i in *; do
   echo "Checking ${i} now"
