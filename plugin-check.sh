@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Bash script written by Saad Ismail - me@saadismail.net
+# https://github.com/saadismail/ - https://www.linkedin.com/in/saaadyi
+
 # Disable wordpress plugin one by one & asks if it resolves the issue
 # Helpful to diagnose 500 error or White Page of Death
 
