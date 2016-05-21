@@ -3,8 +3,8 @@
 # Bash script written by Saad Ismail - me@saadismail.net
 # https://github.com/saadismail/ - https://www.linkedin.com/in/saaadyi
 
-# Disable wordpress plugin one by one & asks if it resolves the issue
-# Helpful to diagnose 500 error or White Page of Death
+# Update wordpress plugin one by one (Downloads from wordpress.org}
+# Doesn't work with premium plugins, for those put .zip files under $tmpdir
 
 # Directory where wordpress is installed
 dir="" # Must not have back-slash at end
