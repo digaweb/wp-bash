@@ -6,10 +6,17 @@ user=root
 password="yourpassword"
 ```
 
-# dumpdbs.sh
+## dumpdbs.sh
 Grabs a backup of all databases
 
-# pass-update.sh
+## pass-update.sh
 This scripts grabs the list of databases and asked for a selection then
 changes all the wordpress user's passwords, emails it to them and creates
 a local txt file with all info.
+
+###### Sourse scripts from https://github.com/saadismail/wp-bash
+
+
+**ToDos**
+- [ ] Edit all scripts
+
