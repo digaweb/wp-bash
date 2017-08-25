@@ -5,8 +5,11 @@
 
 # Get all info from user
 function getinfo(){
-   read -p "Enter database name:" database
-   read -p "Enter Domain.com:" domain
+   echo "Available Databases are: "
+   echo "show databases;" | mysql
+   echo " "
+   read -p "Enter database name: " database
+   read -p "Enter Domain.com: " domain
 }
 
 # Update passwords of all wordpress users with random 12 chars passwords & Email them the new passwords
