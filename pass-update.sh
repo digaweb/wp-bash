@@ -12,6 +12,8 @@ function getinfo(){
    read -p "Enter Domain.com: " domain
 }
 
+getinfo
+
 # Update passwords of all wordpress users with random 12 chars passwords & Email them the new passwords
 
 users=$(mysql $database -Bse "select user_login from wp_users")
@@ -23,5 +25,6 @@ do
  email=$(mysql $database -Bse "select user_email from wp_users where user_login='$user'")
  message="Your password for http://$domain/wp-admin has been reset, please login with the following\n\n $user \n $password"
  echo -e $message | mail -s "$domain Password Reset" $email
- echo $user $password
+ echo $domain $database >> $domain-passwords.txt
+ echo $user $password $email >> $domain-passwords.txt
 done
